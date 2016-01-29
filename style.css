@@ -1,0 +1,27 @@
+body{
+    background-image:url(http://www.polyvore.com/cgi/img-thing?.out=jpg&amp;size=l&amp;tid=62541090);
+}
+header{
+    height: 20vh;
+    background-color: whitesmoke;
+}
+main{
+    border: 1px solid black;
+    height: 75vh;
+    width: 100vw;
+}
+/*.card{
+    height: 30vh;
+    width:15vw;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    background-color: black;
+}*/
+aside{
+    float: left;
+    height: 75vh;
+    width: 25vw;
+    border: solid 1px blue;
+    background-color: whitesmoke;
+}
