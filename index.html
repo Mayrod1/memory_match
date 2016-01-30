@@ -3,26 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>memory match main page</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://learning-fuze.github.io/memory_match/v0.1/script.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".back").click(function(){
+                $(this).hide();
+            });
+        });
+
+    </script>
 </head>
 <body>
 <header>
+    <img src="images/bagLogo.png" alt="logo" height="100" width="100">
     <h1>Memory Match</h1>
-
-    <nav></nav>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="#">Settings</a> </li>
+        </ul>
+    </nav>
 </header>
 <aside>
-
-</aside>
-<main>
-<div class="game-area">
-    <div class="card">
-        <img src="http://i.istockimg.com/file_thumbview_approve/71942551/3/stock-illustration-71942551-shopping-girl.jpg" class="back">
+    <h1>STATS:</h1>
+    <div class="games_played">
+        <div class="label">Games Played</div>
+        <div class="value"></div>
     </div>
-
-</div>
-</main>
+    <div class="attempts">
+        <div class="label">attempts</div>
+        <div class="value"></div>
+    </div>
+    <div class="accuracy">
+        <div class="label">Accuracy</div>
+        <div class="value"></div>
+    </div>
+    <button class="reset" type="button">Reset Game</button>
+</aside>
+<section class="game-area">
+    <!--1-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--2-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--3-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--4-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--5-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--6-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--7-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--8-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+    <!--9-->
+    <div class="card">
+        <img src="images/kate-spade_rose.jpg" class="front">
+        <img src="images/shopping-girl.jpeg" class="back">
+    </div>
+</section>
 
 </body>
 </html>
