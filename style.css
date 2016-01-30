@@ -61,10 +61,10 @@ section{
 div .front{
     height: 100%;
     width: 100%;
-    //*position: absolute;*//
+    position: absolute;
 }
 div .back{
     height: 100%;
     width: 100%;
-    //*position: absolute;*//
+    position: absolute;
 }
