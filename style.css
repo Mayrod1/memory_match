@@ -58,12 +58,12 @@ section{
     left: 20px;
     margin: 0 10px 10px 0;
 }
-div .front{
+ .front img{
     height: 100%;
     width: 100%;
     position: absolute;
 }
-div .back{
+ .back img{
     height: 100%;
     width: 100%;
     position: absolute;
