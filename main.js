@@ -1,0 +1,96 @@
+//put global variables here
+var first_card_clicked = null;  //this variable will point to the element of the
+                                // first card clicked in any  given match set
+var the_bouncer = true;  //the bouncer is true when cards can be clicked
+
+var total_possible_matches = 2;
+var current_matches = null;
+$(document).ready(function(){
+    console.log('document ready event handler');
+    $('.back').click(function(){
+        console.log('back button was clicked: ',this);
+       handle_click(this);
+    });
+});
+
+
+//put functions here
+//@purpose: this function will process the click on a card, regardless of if it is a second or first click
+//@params: card - the element that was clicked
+//@return: none
+//@global: first_card_clicked: contains the pointer to the card
+//         element that was first clicked in any given set
+function handle_click(card){
+    if(the_bouncer!=true){
+        console.log('card cannot be clicked');
+        return;
+    }
+    console.log('start of function' + window.performance.now());
+    //console.log('handle click called on ',card,$(card));
+    flip_card_reveal(card);
+    if(first_card_clicked==null){
+        //this is the first card clicked
+        //store the card into a variable for later use
+        first_card_clicked= card;
+    }
+    else{
+        //this is the second card clicked
+        //check to see if cards match
+        var second_card_clicked= card;
+        var first_card_img = $(first_card_clicked).parent().find('.front > img').attr('class');
+        //wrapped first_card_clicked element in jquery to now use jquery methods. Went to the parent of
+        //that element and in there looked for img element in the an element with the front class
+        // and got the attribute src.
+        var second_card_img = $(second_card_clicked).parent().find('.front > img').attr('class')
+        //console.log("first_card_clicked", $(first_card_clicked).parent());
+        //console.log("second_card_clicked", $(second_card_clicked).parent());
+        if(first_card_img== second_card_img){
+            console.log('they match');
+            first_card_clicked = null;
+            current_matches = current_matches +1;
+            console.log(current_matches);
+            if(current_matches == total_possible_matches){
+                document.write('You Won!');
+            }
+            else{return}
+        }
+        else{
+            the_bouncer = false;
+            console.log('they don\'t match');
+            console.log('start of do not match handler'  + window.performance.now());
+
+            setTimeout(function(){
+                console.log('cards are being hidden' + window.performance.now());
+                flip_card_hide(first_card_clicked);
+                flip_card_hide(second_card_clicked);
+                first_card_clicked= null;
+                the_bouncer = true;
+            },3000);
+            console.log('cards are reset' + window.performance.now());
+
+            //the code was run down here after a 3 second delay
+        }
+    }
+
+
+}
+
+//function flip_card_reveal
+//@purpose: reveals a card
+//@params: card - the card to be revealed
+//@return: none
+//@global: none
+function flip_card_reveal(card){
+    console.log('this: ',card);
+    $(card).hide()
+}
+
+//function flip_card_hide
+//@purpose: hide a card
+//@params: card - the card to be hidden
+//@return: none
+//@global: none
+function flip_card_hide(card){
+    console.log('this: ',card);
+    $(card).show()
+}

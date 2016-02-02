@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <title>memory match main page</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://learning-fuze.github.io/memory_match/v0.1/script.js"></script>
-    <script>
-        // $(document).ready(function(){
-
-        //  $(".back").click(function(){
-        //    $(this).hide();
-        //  });
-        // });
-
+    <script src="main.js">
     </script>
 </head>
 <body>
 <header>
-    <img src="images/bagLogo.png" alt="logo" height="100" width="100">
+    <img src="images/D-logo.jpg" alt="logo" height="100" width="100">
     <h1>Memory Match</h1>
     <nav>
         <ul>
@@ -43,170 +36,171 @@
     </div>
     <button class="reset" type="button">Reset Game</button>
 </aside>
-<section id="game-area">
+<div id="game-area">
     <!--1-->
     <div class="card">
         <div class="front">
-        <img src="images/kate-spade_rose.jpg">
+        <img src="images/mal.jpg" class="mal">
         </div>
         <div class="back">
-        <img src="images/shopping-girl.jpeg">
+        <img src="images/apple.jpg">
         </div>
     </div>
     <!--2-->
     <div class="card">
         <div class="front">
-            <img src="images/chanel-dreambag.jpg">
+            <img src="images/Evie.jpg" class="evie">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
+
     </div>
     <!--3-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
-            <img src="images/my-chanel.jpg">
+            <img src="images/jafar.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--4-->
-    <div class="card">
+   <!-- <div class="card">
         <div class="front">
-            <img src="images/LV.jpg">
+            <img src="images/fairy-godmother.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--5-->
-    <div class="card">
+   <!-- <div class="card">
         <div class="front">
-            <img src="images/my-black-tb.jpg">
+            <img src="images/jay.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--6-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
-            <img src="images/my-laptop-bag.jpg">
+            <img src="images/carlos.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--7-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
-            <img src="images/my-black-tb.jpg">
+            <img src="images/cruela.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--8-->
     <div class="card">
         <div class="front">
-            <img src="images/LV.jpg">
+            <img src="images/evil-queen.jpg" class="evie">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--9-->
     <div class="card">
         <div class="front">
-            <img src="images/chanel-dreambag.jpg">
+            <img src="images/maleficent.jpg" class="mal">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--10-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/my-chanel.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--11-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/my-laptop-bag.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
         <!--12-->
-    <div class="card">
+   <!-- <div class="card">
             <div class="front">
                 <img src="images/ks-crossbody.jpg">
             </div>
             <div class="back">
-                <img src="images/shopping-girl.jpeg">
+                <img src="images/apple.jpg">
             </div>
     </div>
     <!--13-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/ks-crossbody.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--14-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/classy_and_fab.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--15-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/kate-spade_rose.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--16-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/classy_and_fab.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--17-->
-    <div class="card">
+   <!-- <div class="card">
         <div class="front">
             <img src="images/coco.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
     </div>
     <!--18-->
-    <div class="card">
+    <!--<div class="card">
         <div class="front">
             <img src="images/coco.jpg">
         </div>
         <div class="back">
-            <img src="images/shopping-girl.jpeg">
+            <img src="images/apple.jpg">
         </div>
-    </div>
-</section>
+    </div> -->
+</div>
 
 </body>
 </html>
