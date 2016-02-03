@@ -1,9 +1,10 @@
 body{
-    background-image: url("http://vignette3.wikia.nocookie.net/thedescendants/images/5/50/Wiki-background/revision/latest/scale-to-width-down/1024?cb=20160107173508")
+    background-image: url(images/background.jpg);
+    background-size: cover;
 }
 header{
     height: 25vh;
-    background-color: darkcyan;
+    *background-color: darkcyan;
     text-align: center;
     border-radius: 15px;
 }
@@ -20,8 +21,8 @@ header img{
     float: left;
     display: inline-block;
     left: 10px;
-    height: 95%;
-    width: 12%;
+    height: 100%;
+    width: 15%;
     border-radius: 7px;
     top: 4px;
 }
@@ -41,16 +42,15 @@ aside{
     top:30px;
     position: relative;
     border-radius: 12px;
+    text-align: center;
 }
 
 .reset{
     top: 200px;
     position: relative;
-    left: 20px;
 }
 aside div{
     position: relative;
-    left: 10px;
     margin:20px 0 10px 5px;
 }
 #game-area{
@@ -61,7 +61,7 @@ aside div{
 }
 .card{
     height: 150px;
-    width:160px;
+    width:200px;
     position: relative;
     display: inline-block;
     top: 20px;
