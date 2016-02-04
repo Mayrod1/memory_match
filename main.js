@@ -16,6 +16,12 @@ $(document).ready(function(){
         //console.log('back button was clicked: ',this);
        handle_click(this);
     });
+    $('.reset').click(function(){
+        games_played++;
+        reset_stats();
+        display_stats();
+        $('.back').show();
+    })
 });
 
 
@@ -43,7 +49,7 @@ function handle_click(card){
         //check to see if cards match
         var second_card_clicked = card;
         attempts++;
-        display_stats(attempts);
+
 
 
         var first_card_img = $(first_card_clicked).parent().find('.front > img').attr('class');
@@ -84,6 +90,7 @@ function handle_click(card){
             //the code was run down here after a 2 second delay
 
         }
+        display_stats(attempts);
     }
 }
 
@@ -118,6 +125,12 @@ function flip_card_hide(card){
 function display_stats(){
     $('.games-played .value').text(games_played);
     $('.attempts .value').text(attempts);
+    if(attempts==0){
+        accuracy=0;
+    } else {
+        accuracy = (Math.floor((matches/attempts) *100));
+    }
+    $('.accuracy .value').text(accuracy + '%');
 }
 //function reset_stats
 //@purpose: start over
