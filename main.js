@@ -74,19 +74,21 @@ function handle_click(card){
         }
         else{
             //dan start
-            the_bouncer = false;
-            console.log('they don\'t match');
-            console.log('start of do not match handler'  + window.performance.now());
+            // the bouncer equals false;
+
+                //setTimeout function so the cards don't flip back too quickly and you can actually see the front pic.
 
 
-            setTimeout(function(){
-                console.log('cards are being hidden' + window.performance.now());
-                flip_card_hide(first_card_clicked);
-                flip_card_hide(second_card_clicked);
-                first_card_clicked= null;
-                the_bouncer = true;
-            },2000);
-            console.log('cards are reset' + window.performance.now());
+                //flip card hide -this will hide the front of the first card that was clicked
+
+                //this will hide the (second card clicked)
+
+                //first card clicked is now null again and we start over.
+
+                //the bouncer is now true again and now the cards will be able to be clicked.
+
+            //, this delays the function to run for 2 seconds
+
 
             //the code was run down here after a 2 second delay
             //dan end
