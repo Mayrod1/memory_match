@@ -73,6 +73,7 @@ function handle_click(card){
             else{}
         }
         else{
+            //dan start
             the_bouncer = false;
             console.log('they don\'t match');
             console.log('start of do not match handler'  + window.performance.now());
@@ -88,7 +89,7 @@ function handle_click(card){
             console.log('cards are reset' + window.performance.now());
 
             //the code was run down here after a 2 second delay
-
+            //dan end
         }
         display_stats(attempts);
     }
