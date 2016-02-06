@@ -65,9 +65,10 @@ function handle_click(card){
             current_matches = current_matches +1;
             console.log(current_matches);
             matches++;
+            //this will show the win message
             if(current_matches == total_possible_matches){
                 setTimeout(function(){
-                    document.write('You Won!');
+                    alert('Yay you did it!!');
                }, 1500);
             }
             else{}
